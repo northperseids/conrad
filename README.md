@@ -1,0 +1,2 @@
+# conrad
+Conlanging dictionary bot
