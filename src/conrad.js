@@ -665,35 +665,4 @@ client.on('interactionCreate', async (interaction) => {
 })
 
 
-/* // THIS CAN USE SHEET NAME VAR
-async function testGetSpreadSheetValues() {
-    let spreadsheetId = '1IxyaGl9l5t8ehorUSQ2clXzJeysF6WgTgS14A8tKVYY'
-    let sheetName = 'conrad2'
-    try {
-        const auth = await getAuthToken();
-        const response = await getSpreadSheetValues({
-            spreadsheetId,
-            sheetName,
-            auth
-        })
-
-        // manipulate to get sheet name
-        let words = JSON.stringify(response.data);
-        let wordsjson = JSON.parse(words);
-        let arr = wordsjson.range;
-
-        // split along !
-        let namedsheet = arr.split('!')[0]
-
-    } catch (error) {
-        console.log(error.message, error.stack);
-    }
-}
-
-function main() {
-    testGetSpreadSheetValues();
-}
-
-main(); */
-
 client.login(process.env.TOKEN);
